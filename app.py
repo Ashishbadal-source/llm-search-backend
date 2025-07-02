@@ -41,5 +41,10 @@ def get_history():
         {'question': h.question, 'answer': h.response} for h in history
     ])
 
+
+@app.route('/')
+def home():
+    return " LLM Backend is Live!"
+
 if __name__ == '__main__':
     app.run(debug=True)
